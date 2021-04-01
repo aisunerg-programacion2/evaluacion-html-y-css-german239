@@ -1,0 +1,146 @@
+:root{
+    --color1:#50a;
+    --color2:#0c9;
+    --color3:#09c;
+    --color4:#ee0;
+    --color5:#f70;
+}
+.flex{
+    display: flex;
+}
+.aling-content-center{
+    align-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+hr{
+    border: none;
+    border-bottom: 2px solid var(--color4);
+    margin: 0 10px;
+}
+.unityBackbround{
+    /* position: absolute;
+    z-index: -1; */
+    background: var(--color1);
+    padding: 3px;
+    height: 250px;
+    width: 100%;
+    min-width: 900px;
+}
+.personal__container{
+    display: flex;
+    justify-content: center;
+    background: var(--color2);
+    /* transform: translateY(50px); */
+    /* margin-top: 200px; */
+    /* width: 70vw;
+    min-width: 700px;
+    max-width: ;
+    height: 200px;
+    margin: 0px auto;
+    top: -50px; */
+}
+.personal-info{
+    height: 200px;
+    width: 400px;
+    background: var(--color3);
+}
+.personal-img-container{
+    height: 200px;
+    width: 200px;
+    background: var(--color4);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%);
+}
+.section__job{
+    width: 90vw;
+    margin: 10px auto;
+    background-color: darkgrey;
+    border-radius: 20px 20px 0 0;
+    border-top: 3px solid red;
+}
+.section__job h2{
+    text-align: center;
+    color: white;
+}
+
+/* seccion en donde se le da estilo a los trabajos */
+
+/* es el que contiene las cajas de trabajo */
+.job__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: var(--color5);
+}
+
+/* es cada trabajo */
+.job-item{
+    flex-grow: 0.2;
+    flex-basis: 200px;
+    max-width: 200px;
+
+    /* min-width: 200px;
+     */
+    /* height: 200px; */
+    background: var(--color2);
+}
+
+/* el titulo del trabajo :v */
+.job-item-titulo{
+    /* width: 100%; */
+    height: 39px;
+    margin-top: 15px;
+    transform: translateX(-15px);
+    background: var(--color1);
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+/* modificar el icono del titulo del trabajo */
+.job-item-titulo i{
+    margin-left: 10px;
+    align-self: center;
+}
+
+/* para modificar el texto del titulo del trabajo */
+.job-item-titulo p{
+    /* padding: 10px; */
+    color: white;
+    align-self: center;
+
+}
+
+/* el objeto que contiene la direccion y el contacto del trabajo */
+.job-item-contact-container{
+    margin: 10px;
+}
+
+/* el objeto que contiene la direccion y el contacto del trabajo */
+.job-item-contact-container-flex{
+    display: flex;
+    align-content: center;
+}
+
+
+/* para modificar la direccion y contacto */
+.job-item-contact-item{
+    /* margin-left: 10px; */
+    align-self: center;
+}
+
+/* descripcion del trabajo */
+.job-item-description{
+    border: 1px solid green;
+    margin:10px;
+    padding: 10px;
+    color: green;
+}
+
+/* iconos dentro de cada trabajo */
+.job-item-icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: black;
+}
+
