@@ -1,0 +1,21 @@
+@keyframes from-left-to-right{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes escalarY{
+    0%{
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}

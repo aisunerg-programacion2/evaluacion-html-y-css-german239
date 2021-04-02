@@ -1,0 +1,63 @@
+
+
+/* css donde se le dan estilos especificos a la parte de job */
+
+
+/* el titulo del trabajo */
+.section__job-item-titulo{
+    transform: translateX(-15px);
+
+    height: 39px;
+    margin-top: 15px;
+
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    border-radius: var(--borde-redondeado-estandar) 0 0 var(--borde-redondeado-estandar) ;
+
+    background: var(--color-divisor-contraste-2);
+    
+    /* background: linear-gradient(to right, var(--color1), transparent) ; */
+    /* border: 2px solid #0c9; */
+}
+/* modificar el icono del titulo del trabajo */
+.section__job-item-titulo i{
+    margin-left: 10px;
+}
+
+/* para modificar el texto del titulo del trabajo */
+.section__job-item-titulo p{
+
+}
+
+/* el objeto que contiene la direccion y el contacto del trabajo */
+.section__job-item-contact-container{
+    margin: 10px;
+}
+
+/* el objeto que contiene la direccion y el contacto del trabajo */
+.section__job-item-contact-container-flex{
+    display: flex;
+    align-content: center;
+    margin-bottom: 5px;
+}
+
+
+/* para modificar la direccion y contacto */
+.section__job-item-contact-item{
+    /* margin-left: 10px; */
+    align-self: center;
+}
+
+/* descripcion del trabajo */
+.section__job-item-description{
+    margin:10px;
+    padding: 0 10px;
+}
+
+/* iconos dentro de cada trabajo */
+.section__job-item-icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: black;
+    margin-right: 5px;
+}

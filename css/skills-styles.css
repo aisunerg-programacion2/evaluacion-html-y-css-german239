@@ -1,0 +1,83 @@
+
+
+/* css donde se le dan estilos especificos a la parte de skills */
+
+
+.skill-programas{
+    
+}
+.skill-programacion{
+    
+}
+.skill-actitudes{
+
+}
+
+.skill-bar-container{
+    /* position: relative; */
+    /* padding: 10px; */
+}
+
+.skill-bar-container div:first-child{
+    border-radius: 0 var(--borde-redondeado-estandar) 0 0;
+}    
+
+.skill-bar-container div:last-child{
+    border-radius: 0 0 0 var(--borde-redondeado-estandar);
+}
+
+
+
+
+.skill-bar-container h3{
+    /* font-size: 14px; */
+    /* width: 120%; */
+    /* transform: scaleX(1.5); */
+    /* clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%); */
+    /* transform: translateX(-15px); */
+
+    line-height: 36px;
+    text-align: center;
+    
+    border-radius: 0 var(--borde-redondeado-estandar) 0 0;
+
+    background-color: var(--color-encabesado-medio);
+    /* border: 2px solid var(--color-divisor-contraste); */
+    /* border-top: 2px solid var(--color-divisor-contraste); */
+    /* border-bottom: 2px solid var(--color-divisor-contraste); */
+}
+
+.skill-bar-container h4{
+    font-size: 16px;
+    text-align: center;
+    transform: translateY(17px);
+    /* transform: translateY(5px); */
+}
+
+.skill-bar-container-flex{
+    display: flex;
+    align-content: center;
+    margin: 5px 10px;
+    padding: 5px;
+
+    /* border-top: var(--borde-ancho-estandar) solid var(--color-contenido-medio); */
+    border-bottom: var(--borde-ancho-estandar) solid var(--color-divisor-contraste);
+
+    /* background-color: var(--color-contenido-claro); */
+    background: linear-gradient(to top, var(--color-contenido-oscuro), var(--color-contenido-medio));
+
+    /* box-shadow: 1px 2px white; */
+}
+
+
+/* icono de las habilidades individuales */
+.skills-item-icon{
+    flex-shrink: 0;
+    flex-basis: 30px;
+    height: 30px;
+    background: black;
+
+    margin: 0 3px;
+    /* margin-right: 3px;
+    margin-left: 3px; */
+}
