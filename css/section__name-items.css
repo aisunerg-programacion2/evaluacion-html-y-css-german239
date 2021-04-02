@@ -4,6 +4,7 @@
 
 .section__skills, .section__job{
     width: 80vw;
+    max-width: 1000px;
     margin: 25px auto;
 
     
@@ -34,8 +35,9 @@
     
     justify-content: space-evenly;
 
-    padding-left: 12px;
-    padding-right: 12px;
+    /* padding-left: 12px;
+    padding-right: 12px; */
+    padding:12px;
 
     background: var(--color-fondo-no-editado);
     overflow: hidden;
@@ -53,11 +55,12 @@
 }
 
 .section__skill-item, .section__job-item{
+
     flex-grow: 0.2;
-    /* transform: scaleY(0.1); */
+    /* box-sizing: border-box; */
     
-    flex-basis: 200px;
-    max-width: 200px;
+    flex-basis: 210px;
+    /* max-width: 270px; */
     margin: 5px 12px;
 
     background: var(--color-contenido-medio);
@@ -69,6 +72,13 @@
     /* animaciones */
     animation-duration: 1s;
     animation-fill-mode: both;
+
+    transition: border 0.2s;
+}
+.section__skill-item:hover, .section__job-item:hover{
+    border-radius: 0 var(--borde-redondeado-estandar) 0 var(--borde-redondeado-estandar) ;
+    border-top: calc(var(--borde-ancho-estandar) *3) solid var(--color-divisor-contraste);
+    border-bottom: calc(var(--borde-ancho-estandar) *3) solid var(--color-divisor-contraste);
 }
 .section__skill-item{
     animation-name: from-left-to-right;
@@ -82,6 +92,24 @@
 }
 
 
+@media only screen and (max-width: 500px){
+    .section__skills, .section__job{
+        width: 90vw;
+        /* min-width: 350px; */
+        margin: 25px auto;
+    }
+
+    .section__skills-container, .section__job-container{
+        overflow: visible;
+
+    }
+    .section__skill-item, .section__job-item{
+        
+        flex-basis: 400px;
+        margin: 5px 0px;
+    
+    }
+}
 
 
 

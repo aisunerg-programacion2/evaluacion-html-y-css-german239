@@ -53,14 +53,18 @@ hr{
     color: #fff;
     font-size: 16px;
 }
+.text-white14{
+    color: #fff;
+    font-size: 14px;
+}
 
-.shadow-b{
-    text-shadow: 2px 2px 5px #000;
+.shadow-b-2-2-3{
+    text-shadow: 2px 2px 3px #000;
     
 }
-/* *{
-    text-shadow: 2px 2px 5px #000;
-} */
+.shadow-b-0-0-7{
+    text-shadow: 0px 0px 7px #000;
+}
 
 
 .barra-porcentaje{
@@ -81,6 +85,7 @@ hr{
 
 .Background-container{
     position: absolute;
+    height: 450px;
     z-index: -1;
     top: -150px;
     /* margin: 0 auto; */
@@ -96,7 +101,7 @@ hr{
     height: 100%;
 
     object-fit: cover;
-    object-position: top;
+    object-position: bottom;
     
     /* filter: opacity(); */
     opacity: linear-gradient(to bottom, 100%, 10%);
@@ -106,83 +111,15 @@ hr{
 
 
 
-.section__personal{
-    display: flex;
-    justify-content: center; 
-    margin-top: 150px;
+@media only screen and (max-width: 500px){
+    .Background-container{
+        display: none;
+    }
+    .barra-porcentaje{
+        height: 20px;
+        width: 300px;
+    }
 }
-
-.section__personal-container{
-    display: inline-flex;
-    
-    flex-basis: 750px;
-    height: 250px;
-
-    background: var(--color-encabesado-oscuro);
-
-    border-left: 10px solid var(--color-divisor-contraste);
-
-    --ancho-borde: 30px;
-
-    border-radius: var(--ancho-borde) 0 0 var(--ancho-borde);
-    /* box-shadow: 2px 2px 5px grey; */
-
-    /* animaciones */
-    animation-name: from-top-to-bottom;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-    /* animation-timing-function: cubic-bezier(0, 0, .8, 1.5); */
-}
-
-.personal-info{
-    flex-basis: 60%;
-    padding: 25px 0 25px 25px;
-}
-.personal-info p{
-    margin-bottom: 20px;
-}
-.personal-info ul li{
-    margin-bottom: 5px;
-}
-.personal-info ul li i{
-    margin-right: 5px;
-}
-
-
-.personal-info div{
-    display: flex;
-    
-}
-.personal-info div a{
-    flex-basis: 30px;
-    height: 30px;
-    margin: 10px;
-    
-    background: #555;
-
-    transition: transform 0.1s;
-}
-.personal-info div a:hover{
-    transform: var(--simple-zoom-1);
-}
-
-.personal-img-container{
-    flex-basis: 40%;
-    
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
-
-    background: var(--color5);
-    outline: 1px green solid ;
-    outline-offset: 2px;
-    transition: 0.1s;
-}
-.personal-img-container:hover{
-    transform: var(--simple-zoom-1);
-}
-
-
-
-
 
 
 

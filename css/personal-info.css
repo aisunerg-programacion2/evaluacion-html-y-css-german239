@@ -1,0 +1,138 @@
+
+/* donde esta la foto y el nombre */
+
+.section__personal{
+    display: flex;
+    justify-content: center; 
+    margin-top: 150px;
+}
+
+.section__personal-container{
+    display: inline-flex;
+    
+    flex-basis: 750px;
+    height: auto;
+
+    background: var(--color-encabesado-oscuro);
+
+    
+    --ancho-borde: 30px;
+    border-radius: var(--ancho-borde) 0 0 var(--ancho-borde);
+
+    border-left: 10px solid var(--color-divisor-contraste);
+    /* box-shadow: 2px 2px 5px grey; */
+
+    /* animaciones */
+    animation-name: from-top-to-bottom;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+
+    transition: border 0.1s;
+}
+.section__personal-container:hover{
+    border-left: 15px solid var(--color-divisor-contraste);
+}
+
+.personal-info{
+    flex-basis: 60%;
+    padding: 25px 0 25px 25px;
+}
+.personal-info p{
+    margin-bottom: 20px;
+}
+.personal-info ul{
+    list-style-type: none;
+}
+.personal-info ul li{
+    margin-bottom: 5px;
+}
+.personal-info ul li i{
+    margin-right: 5px;
+}
+
+
+.personal-info div{
+    display: flex;
+    
+}
+.personal-info div a{
+    flex-basis: 30px;
+    height: 30px;
+    margin: 10px;
+    
+    background: #555;
+
+    transition: transform 0.1s;
+}
+.personal-info div a:hover{
+    transform: var(--simple-zoom-1);
+}
+
+.personal-img-container{
+    flex-basis: 40%;
+    
+    /* height: 100%; */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+
+    transition: 0.1s;
+}
+.personal-img-container:hover{
+    transform: var(--simple-zoom-1);
+}
+
+
+@media only screen and (max-width: 800px){
+    .section__personal-container{
+        flex-basis: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .section__personal{
+        display: flex;
+        justify-content: center; 
+        margin-top: 15px;
+    }
+    .section__personal-container{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 95%;
+        
+        align-items: center;
+
+        border-left: 10px solid var(--color-divisor-contraste);
+        border-right: 10px solid var(--color-divisor-contraste);
+        border-radius: var(--ancho-borde);
+    }
+    .section__personal-container:hover{
+        border-left: 15px solid var(--color-divisor-contraste);
+        border-right: 15px solid var(--color-divisor-contraste);
+    }
+
+    .personal-info{
+        order: 5;
+        
+    }
+
+    .personal-img-container{
+        /* flex-basis: 50px; */
+        /* display: inline-flex; */
+        /* transition: 0.1s; */
+        order: 0;
+        
+        clip-path: none;
+
+        height: 250px;
+        width: 80%;
+
+        margin-top: 30px;
+        
+    }
+    
+    .personal-img-container img{
+        border-radius: 100px;
+        /* width: 100px; */
+        /* align-self: center;
+        justify-self: center; */
+    }
+}

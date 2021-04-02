@@ -15,6 +15,7 @@
 
     --borde-redondeado-estandar: 17px;  
     --borde-ancho-estandar: 3px;
+    
 
     --simple-zoom-05: scaleX(1.05) scaleY(1.05);
     --simple-zoom-1: scaleX(1.1) scaleY(1.1);
@@ -24,6 +25,7 @@
     --tiempo-delay-apartado-3: 4s;
 
     --tiempo-entre-animacion: 0.5s;
+
     /* colores al alzar */
     --color1:#50a;
     --color2:#0c9;

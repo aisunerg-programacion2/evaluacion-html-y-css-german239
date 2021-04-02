@@ -14,8 +14,11 @@
 }
 
 .skill-bar-container{
-    /* position: relative; */
-    /* padding: 10px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: fit-content; */
 }
 
 .skill-bar-container div:first-child{
