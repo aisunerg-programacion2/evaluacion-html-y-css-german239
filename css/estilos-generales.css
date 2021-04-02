@@ -118,9 +118,9 @@ hr{
     flex-basis: 750px;
     height: 250px;
 
-    background: var(--color-fondo-encabesado);
+    background: var(--color-encabesado-oscuro);
 
-    border-left: 10px solid var(--color-divisor-contraste-2);
+    border-left: 10px solid var(--color-divisor-contraste);
 
     --ancho-borde: 30px;
 
@@ -128,7 +128,7 @@ hr{
     /* box-shadow: 2px 2px 5px grey; */
 
     /* animaciones */
-    animation-name: from-left-to-right;
+    animation-name: from-top-to-bottom;
     animation-duration: 2s;
     animation-fill-mode: both;
     /* animation-timing-function: cubic-bezier(0, 0, .8, 1.5); */
@@ -144,18 +144,26 @@ hr{
 .personal-info ul li{
     margin-bottom: 5px;
 }
+.personal-info ul li i{
+    margin-right: 5px;
+}
 
 
 .personal-info div{
     display: flex;
-
+    
 }
 .personal-info div a{
     flex-basis: 30px;
     height: 30px;
     margin: 10px;
-
+    
     background: #555;
+
+    transition: transform 0.1s;
+}
+.personal-info div a:hover{
+    transform: var(--simple-zoom-1);
 }
 
 .personal-img-container{
@@ -164,6 +172,12 @@ hr{
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
 
     background: var(--color5);
+    outline: 1px green solid ;
+    outline-offset: 2px;
+    transition: 0.1s;
+}
+.personal-img-container:hover{
+    transform: var(--simple-zoom-1);
 }
 
 

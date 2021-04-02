@@ -80,4 +80,9 @@
     margin: 0 3px;
     /* margin-right: 3px;
     margin-left: 3px; */
+    transition: 0.1s;
+}
+
+.skills-item-icon:hover{
+    transform: var(--simple-zoom-1);
 }

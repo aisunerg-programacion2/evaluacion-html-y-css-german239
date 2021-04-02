@@ -4,7 +4,7 @@
 
 .section__skills, .section__job{
     width: 80vw;
-    margin: 10px auto;
+    margin: 25px auto;
 
     
     background: var(--color-encabesado-oscuro);
@@ -16,7 +16,12 @@
     animation-name: escalarY;
     animation-duration: 1s;
     animation-fill-mode: both;
-    animation-delay: 1s;
+}
+.section__skills{
+    animation-delay: var(--tiempo-delay-apartado-2);
+} 
+.section__job{
+    animation-delay: var(--tiempo-delay-apartado-3);
 }
 
 
@@ -33,12 +38,18 @@
     padding-right: 12px;
 
     background: var(--color-fondo-no-editado);
+    overflow: hidden;
 
     /* animaciones */
     animation-name: escalarY;
     animation-duration: 1s;
     animation-fill-mode: both;
-    animation-delay: 2s;
+}
+.section__skills-container{
+    animation-delay: calc( (1*var(--tiempo-entre-animacion)) + var(--tiempo-delay-apartado-2));
+} 
+.section__job-container{
+    animation-delay: calc( (1*var(--tiempo-entre-animacion)) + var(--tiempo-delay-apartado-3));
 }
 
 .section__skill-item, .section__job-item{
@@ -56,10 +67,18 @@
     border-bottom: var(--borde-ancho-estandar) solid var(--color-divisor-contraste);
     
     /* animaciones */
-    animation-name: escalarY;
     animation-duration: 1s;
     animation-fill-mode: both;
-    animation-delay: 3s;
+}
+.section__skill-item{
+    animation-name: from-left-to-right;
+    animation-delay: calc( (2*var(--tiempo-entre-animacion)) + var(--tiempo-delay-apartado-2));
+    
+} 
+.section__job-item{
+    animation-name: from-right-to-left;
+
+    animation-delay: calc( (2*var(--tiempo-entre-animacion)) + var(--tiempo-delay-apartado-3));
 }
 
 

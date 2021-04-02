@@ -8,6 +8,27 @@
         opacity: 1;
     }
 }
+@keyframes from-right-to-left{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes from-top-to-bottom{
+    0%{
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 @keyframes escalarY{
     0%{

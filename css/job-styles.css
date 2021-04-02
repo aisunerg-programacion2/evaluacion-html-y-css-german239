@@ -14,10 +14,17 @@
     border-radius: var(--borde-redondeado-estandar) 0 0 var(--borde-redondeado-estandar) ;
 
     background: var(--color-divisor-contraste-2);
+
+    transition: transform 0.1s;
     
     /* background: linear-gradient(to right, var(--color1), transparent) ; */
     /* border: 2px solid #0c9; */
 }
+.section__job-item-titulo:hover{
+    transform: translateX(-15px) var(--simple-zoom-1);
+
+}
+
 /* modificar el icono del titulo del trabajo */
 .section__job-item-titulo i{
     margin-left: 10px;
@@ -60,4 +67,9 @@
     height: 25px;
     background: black;
     margin-right: 5px;
+    transition: transform 0.1s;
+}
+.section__job-item-icon:hover{
+
+    transform: var(--simple-zoom-1);
 }
