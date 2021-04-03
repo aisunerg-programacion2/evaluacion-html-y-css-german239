@@ -1,4 +1,4 @@
-/* @keyframes from-left-to-right{
+@keyframes from-left-to-right{
     0%{
         transform: translateX(-1000px);
         opacity: 0;
@@ -39,4 +39,4 @@
         transform: scaleY(1);
         opacity: 1;
     }
-} */
+}
