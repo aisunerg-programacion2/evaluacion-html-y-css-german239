@@ -15,7 +15,6 @@ hr{
     border: none;
     margin: 0 10px;
 
-    /* border: 2px solid #333; */
     border-bottom: var(--borde-ancho-estandar) solid var(--color-divisor-contraste);
     border-radius: var(--borde-redondeado-estandar);
 }
@@ -88,12 +87,6 @@ hr{
     height: 450px;
     z-index: -1;
     top: -150px;
-    /* margin: 0 auto; */
-    /* height: 500px;
-    min-height: 500px; */
-    /* width: 1040; */
-    /* background-image: url(../img/SAM_0580.JPG); */
-    /* max-width: 1024px; */
 }
 
 .Background-img{
@@ -103,7 +96,6 @@ hr{
     object-fit: cover;
     object-position: bottom;
     
-    /* filter: opacity(); */
     opacity: linear-gradient(to bottom, 100%, 10%);
 }
 

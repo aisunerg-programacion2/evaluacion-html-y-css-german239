@@ -13,13 +13,10 @@
     clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
     border-radius: var(--borde-redondeado-estandar) 0 0 var(--borde-redondeado-estandar) ;
 
-    /* background: var(--color-divisor-contraste-2); */
     background:linear-gradient(to right, var(--color-divisor-contraste-2), var(--color-divisor-contraste));
 
     transition: transform 0.1s;
     
-    /* background: linear-gradient(to right, var(--color1), transparent) ; */
-    /* border: 2px solid #0c9; */
 }
 .section__job-item-titulo:hover{
     transform: translateX(-15px) var(--simple-zoom-1);
@@ -51,7 +48,6 @@
 
 /* para modificar la direccion y contacto */
 .section__job-item-contact-item{
-    /* margin-left: 10px; */
     align-self: center;
 }
 
@@ -59,7 +55,7 @@
 .section__job-item-description{
     margin:10px;
     padding: 10px;
-    /* height: auto; */
+
     background: linear-gradient(to right, var(--color-contenido-oscuro),var(--color-contenido-medio));
     border-radius: 0 var(--borde-redondeado-estandar) 0 0;
     border-right: var(--borde-ancho-estandar) solid var(--color-divisor-contraste);
@@ -68,23 +64,13 @@
 /* iconos dentro de cada trabajo */
 .section__job-item-icon{
     display: inline-block;
-    /* width: 25px;
-    height: 25px; */
-    /* background: black; */
-    /* margin-left: 10px;
-
-    margin-right: 15px; */
     transition: transform 0.1s;
 
     flex-shrink: 0;
-    /* flex-basis: 30px;
-    height: 30px; */
-    /* background: black; */
 
     color: #fff;
     margin: 0 8px;
-    /* margin-right: 3px;
-    margin-left: 3px; */
+
     transition: 0.1s;
 }
 .section__job-item-icon:hover{
