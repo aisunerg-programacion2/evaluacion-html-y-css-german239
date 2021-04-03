@@ -68,11 +68,24 @@
 /* iconos dentro de cada trabajo */
 .section__job-item-icon{
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    background: black;
-    margin-right: 5px;
+    /* width: 25px;
+    height: 25px; */
+    /* background: black; */
+    /* margin-left: 10px;
+
+    margin-right: 15px; */
     transition: transform 0.1s;
+
+    flex-shrink: 0;
+    /* flex-basis: 30px;
+    height: 30px; */
+    /* background: black; */
+
+    color: #fff;
+    margin: 0 8px;
+    /* margin-right: 3px;
+    margin-left: 3px; */
+    transition: 0.1s;
 }
 .section__job-item-icon:hover{
 

@@ -54,15 +54,37 @@
 .personal-info div{
     display: flex;
     
+    /* background-color: #555; */
+
+    flex-wrap: wrap;
+        
+    justify-content: space-evenly;
 }
 .personal-info div a{
-    flex-basis: 30px;
-    height: 30px;
+    display: inline-flex;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+
+
+    flex-basis: 50px;
+    height: 50px;
     margin: 10px;
+
+    /* align-content: center; */
     
-    background: #555;
+    /* background: #555; */
 
     transition: transform 0.1s;
+}
+.personal-info div a i{
+    
+
+    color: #fff;
+    /* width: 30px;
+    height: 30px;  */
+
+    
 }
 .personal-info div a:hover{
     transform: var(--simple-zoom-1);
