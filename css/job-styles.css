@@ -28,10 +28,6 @@
     margin-left: 10px;
 }
 
-/* para modificar el texto del titulo del trabajo */
-.section__job-item-titulo p{
-
-}
 
 /* el objeto que contiene la direccion y el contacto del trabajo */
 .section__job-item-contact-container{

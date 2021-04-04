@@ -84,6 +84,7 @@ hr{
 
 .Background-container{
     position: absolute;
+    width: 100%;
     height: 450px;
     z-index: -1;
     top: -150px;
